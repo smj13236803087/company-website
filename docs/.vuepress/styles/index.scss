@@ -1,0 +1,30 @@
+/* 保持导航栏固定在顶部 */
+.vp-navbar {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+}
+
+/* 菜单在导航栏中水平居中 */
+.vp-navbar-items-wrapper {
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+
+  inset-inline-end: auto !important;
+  padding-inline-start: 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+
+  max-width: 100% !important;
+}
+.vp-navbar-item {
+  margin-inline-start: 5rem !important; /* 菜单间距更大 */
+}
+.vp-toggle-color-mode-button {
+  display: none !important;
+}
